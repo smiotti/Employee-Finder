@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Employee Finder</title>
+        
+        <!-- prob dont need -->
+        <!-- <link rel="icon" type="image/png" href="assets/images/favicon.png"> -->
+        
+        
+        <!-- jQuery -->
+        <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Julius+Sans+One" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="/app/public/css/style.css"> -->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="card mb-5" id="survey">
+                <h2 class="card-header p-4"><strong>Survey Questions</strong></h2>
+
+                <h3 class="p-3"><strong>About You</strong></h3>
+                <form class="card-block">
+                    <div class="form-group row py-3">
+                        <label for="name" class="col-12 col-md-3 col-form-label"><strong>Name (Required)</strong></label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control form-control-lg" id="name" required>
+                            <div class="form-control-feedback"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row py-3">
+                        <label for="name" class="col-12 col-md-3 col-form-label"><strong>Link to Photo Image (Required)</strong></label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control form-control-lg" id="photo_url" required>
+                            <div class="form-control-feedback"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q0" class="col-form-label"><strong>Question 1.</strong>  You are able to make decisions quickly.</label>
+                        
+                        <select class="form-control form-control-lg" id="q0">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q1" class="col-form-label"><strong>Question 2.</strong> You prefer to work alone as apposed to working in groups.</label>
+                        
+                        <select class="form-control form-control-lg" id="q1">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q2" class="col-form-label"><strong>Question 3.</strong> Job related training is very important to you.</label>
+                        
+                        <select class="form-control form-control-lg" id="q2">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q3" class="col-form-label"><strong>Question 4.</strong> Being recognized at work is important to you.</label>
+                        
+                        <select class="form-control form-control-lg" id="q3">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q4" class="col-form-label"><strong>Question 5.</strong> You are a morning person.</label>
+                        
+                        <select class="form-control form-control-lg" id="q4">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q5" class="col-form-label"><strong>Question 6.</strong> Having a public speaking platform is important to you.</label>
+                        
+                        <select class="form-control form-control-lg" id="q5">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q6" class="col-form-label"><strong>Question 7.</strong> You do your best work best when under timeline pressure.</label>
+                        
+                        <select class="form-control form-control-lg" id="q6">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q7" class="col-form-label"><strong>Question 8.</strong> You are proactive in identifying future challenges and opportunities.</label>
+                        
+                        <select class="form-control form-control-lg" id="q7">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q8" class="col-form-label"><strong>Question 9.</strong> You prefer PC over Mac.</label>
+                        
+                        <select class="form-control form-control-lg" id="q8">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="form-group py-3">
+                        <label for="q9" class="col-form-label"><strong>Question 10.</strong> Time off from work is as important as compensation to you.</label>
+                        
+                        <select class="form-control form-control-lg" id="q9">
+                            <option selected="selected" disabled>Select an option</option>
+                            <option>1 (strongly disagree)</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5 (strongly agree)</option>
+                        </select>
+                        <div class="form-control-feedback"></div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="button_submit"><i class="fa fa-check-circle mr-2"></i>Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal fade" id="modal_response">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Hi, <span id="my_name"></span>!</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Your new BFF is <strong><span id="friend_name"></span></strong>.</p>
+                            <p>Call now at <strong><span id="friend_number"></span></strong>!</p>
+                            <img class="img-thumbnail my-3" id="friend_photo" src=""></img>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <div class="float-left">
+                    <a href="/api/friends">API Employee List</a>
+                </div>
+            </footer>
+        </div>
+
+        <!-- For Bootstrap 4 -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+         -->
+        <!-- Custom JavaScript -->
+        <!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
+    </body>
+</html>
