@@ -68,11 +68,9 @@ module.exports = [
             1,
             4
         ]
-    },
-
-    
-// Exporting employee array. 
-module.exports = employees;
-
+    }
 ];
 
+
+// Exporting employee array. 
+// module.exports = employees;

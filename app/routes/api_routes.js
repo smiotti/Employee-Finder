@@ -23,6 +23,11 @@ module.exports = function(app){
   // Display JSON of all possible employees.
   app.get('/api/employees', function(req, res) {
     return res.json(employees);
+    const bod = req.body;
+    const chosen = req.params.employees;
+    console.log(bod);
+    console.log(chosen);
+
   });
 
 
