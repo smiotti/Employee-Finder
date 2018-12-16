@@ -4,8 +4,6 @@
 
 Welcome to *Employee Finder*, a compatibility-based "EmployeeFinder" application. This full-stack site will take in results from user's survey, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. 
 
-Express is bing used to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
-
 *This application is intended for developer learning purposes, and not being published commercially.  No animals were harmed while developing and testing this app.*
 
 
