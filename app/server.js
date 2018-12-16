@@ -9,11 +9,12 @@ const app = express();
 const PORT = 8080;
 
 
-// Sets up the Express app to handle data parsing
+// Sets up the Express app to handle data parsing.
+// Allows the data to be in a readable json format.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Sets our server to use the public directory for static assets
+// Sets our server to reference the public directory for static assets
 app.use(express.static(path.join(__dirname, 'public')));
 
 

@@ -9,32 +9,54 @@
 
 
 
-// Importing our data for use in our routes below
+// Importing employee data for use in routes 
 const employees = require('../data/employees.js');
 
-// Exporting our routes
+// Exporting routes
 module.exports = function(app){
-  // app.get('/', function(req, res) {
-  //   return res.send('Welcome to the Company Directory!');
-  // });
-
-
-
-  // Display JSON of all possible employees.
+  
+  // Display JSON for all employees.
   app.get('/api/employees', function(req, res) {
-    return res.json(employees);
-    const bod = req.body;
-    const chosen = req.params.employees;
-    console.log(bod);
-    console.log(chosen);
-
+    res.json(employees);
+    // log a user response to the console for the method being called and the body data
+    console.log(req.method + " request");
+    console.log(req.body);
   });
-
-
-  // Handles incoming survey results. This route also used to handle the compatibility logic.
+  
+  
+  // Handles incoming survey results and adds to the employee data. This route also used to handle the compatibility logic.
   app.post('/api/employees', function(req, res) {
     employees.push(req.body);
-    return res.json(req.body);
+    // res.json(req.body);
+    
+    res.send('Survey form submitted successfuly!')
+    console.log(req.method + " request");
+    console.log(req.body);
+  
+    //   // Respond with success of the delete operation (true or false)
+                  //   return res.json({ success: success })
+    console.log("Form submit successful!");
+    
+        // Test code to remove
+        // app.post('/', function(req, res) {
+        //   console.log(req.body);
+        //   res.end();
+        // });
+
+
+    // Here we take the result of the user's survey POST and parse it.
+    const userData = req.body;
+    // const userScores = userData.scores;
+
+    
+    // Finally save the user's data to the employees data (this has to happen AFTER the check. otherwise,
+    // the employees data will always return that the user is the user's best match).
+    // employees.push(userData);
+    
+
+    
+
+
   });
 
 

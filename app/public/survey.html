@@ -12,7 +12,7 @@
 
 
     <!-- jQuery -->
-    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
@@ -22,54 +22,51 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
 
-    <!-- Custom CSS -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Julius+Sans+One" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="/app/public/css/style.css"> -->
+    <!-- CSS file location refernce-->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- JS file location reference  -->
+    <script src="js/survey.js"></script>
 
 </head>
 
 <body>
     <div class="container">
+        <!-- setting up a Bootstrap Card to house the survey form. -->
         <div class="card mb-5" id="survey">
-            <h1 class="card-header text-primary p-4"><i class="fa fa-check-circle mr-2"></i><strong>Survey Questions</strong></h1>
+            <h1 class="card-header text-primary p-4"><i class="fa fa-check-circle mr-2"></i><strong>Survey Questions</strong>
+                <!-- Hone button -->
+                <a href="/">
+                    <button class="btn float-right btn-lg btn-success">
+                        <span class="fa fa-home"></span>
+                    </button>
+                </a>
+            </h1>
 
             <h2 class="p-3"><strong>About You</strong></h2>
             <form class="card-block">
+                <!-- "Name" Input text box.  This is a reuquired field. -->
                 <div class="form-group row py-3">
-                   <h5 <label for="name" class="col-12 col-md-3 col-form-label"><strong>Name (Required)</strong></label></h5>
+                    <h5 <label for="name" class="col-12 col-md-3 font-weight-bold col-form-label">Name (Required)</label></h5>
                     <div class="col-12 col-md-9">
                         <input type="text" class="form-control form-control-lg" id="name" required>
                         <div class="form-control-feedback"></div>
                     </div>
                 </div>
-
+                <!-- "Photo" Input text box.  Takes in a url and is a required field -->
                 <div class="form-group row py-3">
-                    <h5 <label for="name" class="col-12 col-md-3 col-form-label"><strong>Link to Photo Image (Required)</strong></h5></label>
+                    <h5 <label for="photo" class="col-12 col-md-3 font-weight-bold col-form-label">Photo Image Link
+                        (Required)</h5></label>
                     <div class="col-12 col-md-9">
-                        <input type="text" class="form-control form-control-lg" id="photo_url" required>
+                        <input type="text" class="form-control form-control-lg" id="photo" required>
                         <div class="form-control-feedback"></div>
                     </div>
                 </div>
                 <hr>
+                <!-- 10 questions are being set up using .  -->
                 <div class="form-group py-3">
-                    <label for="q0" class="col-form-label"><strong>Question 1.</strong> You are able to make decisions
-                        quickly.</label>
-
-                    <select class="form-control form-control-lg" id="q0">
-                        <option selected="selected" disabled>Select an option</option>
-                        <option>1 (strongly disagree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly agree)</option>
-                    </select>
-                    <div class="form-control-feedback"></div>
-                </div>
-
-                <div class="form-group py-3">
-                    <label for="q1" class="col-form-label"><strong>Question 2.</strong> You prefer to work alone as
-                        apposed to working in groups.</label>
-
+                    <label for="q1" class="col-form-label text-primary font-weight-bold"><strong>Question 1.</strong>
+                        You are able to make decisions quickly.</label>
                     <select class="form-control form-control-lg" id="q1">
                         <option selected="selected" disabled>Select an option</option>
                         <option>1 (strongly disagree)</option>
@@ -82,9 +79,8 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q2" class="col-form-label"><strong>Question 3.</strong> Job related training is very
-                        important to you.</label>
-
+                    <label for="q2" class="col-form-label text-primary font-weight-bold"><strong>Question 2.</strong>
+                        You prefer to work alone as apposed to working in groups.</label>
                     <select class="form-control form-control-lg" id="q2">
                         <option selected="selected" disabled>Select an option</option>
                         <option>1 (strongly disagree)</option>
@@ -97,9 +93,8 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q3" class="col-form-label"><strong>Question 4.</strong> Being recognized at work is
-                        important to you.</label>
-
+                    <label for="q3" class="col-form-label text-primary font-weight-bold"><strong>Question 3.</strong>
+                        Job related training is very important to you.</label>
                     <select class="form-control form-control-lg" id="q3">
                         <option selected="selected" disabled>Select an option</option>
                         <option>1 (strongly disagree)</option>
@@ -112,8 +107,8 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q4" class="col-form-label"><strong>Question 5.</strong> You are a morning person.</label>
-
+                    <label for="q4" class="col-form-label text-primary font-weight-bold"><strong>Question 4.</strong>
+                        Being recognized at work is important to you.</label>
                     <select class="form-control form-control-lg" id="q4">
                         <option selected="selected" disabled>Select an option</option>
                         <option>1 (strongly disagree)</option>
@@ -126,9 +121,8 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q5" class="col-form-label"><strong>Question 6.</strong> Having a public speaking
-                        platform is important to you.</label>
-
+                    <label for="q5" class="col-form-label text-primary font-weight-bold"><strong>Question 5.</strong>
+                        You are a morning person.</label>
                     <select class="form-control form-control-lg" id="q5">
                         <option selected="selected" disabled>Select an option</option>
                         <option>1 (strongly disagree)</option>
@@ -141,9 +135,8 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q6" class="col-form-label"><strong>Question 7.</strong> You do your best work best when
-                        under timeline pressure.</label>
-
+                    <label for="q6" class="col-form-label text-primary font-weight-bold"><strong>Question 6.</strong>
+                        Having a public speaking platform is important to you.</label>
                     <select class="form-control form-control-lg" id="q6">
                         <option selected="selected" disabled>Select an option</option>
                         <option>1 (strongly disagree)</option>
@@ -156,8 +149,9 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q7" class="col-form-label"><strong>Question 8.</strong> You are proactive in
-                        identifying future challenges and opportunities.</label>
+                    <label for="q7" class="col-form-label text-primary font-weight-bold"><strong>Question 7.</strong>
+                        You do your best work best when
+                        under timeline pressure.</label>
 
                     <select class="form-control form-control-lg" id="q7">
                         <option selected="selected" disabled>Select an option</option>
@@ -171,7 +165,9 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q8" class="col-form-label"><strong>Question 9.</strong> You prefer PC over Mac.</label>
+                    <label for="q8" class="col-form-label text-primary font-weight-bold"><strong>Question 8.</strong>
+                        You are proactive in
+                        identifying future challenges and opportunities.</label>
 
                     <select class="form-control form-control-lg" id="q8">
                         <option selected="selected" disabled>Select an option</option>
@@ -185,8 +181,8 @@
                 </div>
 
                 <div class="form-group py-3">
-                    <label for="q9" class="col-form-label"><strong>Question 10.</strong> Time off from work is as
-                        important as compensation to you.</label>
+                    <label for="q9" class="col-form-label text-primary font-weight-bold"><strong>Question 9.</strong>
+                        You prefer PC over Mac.</label>
 
                     <select class="form-control form-control-lg" id="q9">
                         <option selected="selected" disabled>Select an option</option>
@@ -199,30 +195,52 @@
                     <div class="form-control-feedback"></div>
                 </div>
 
-                <div class="text-center pb-3">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="button_submit"><i class="fa fa-check-circle mr-2"></i>Submit</button>
+                <div class="form-group py-3">
+                    <label for="q10" class="col-form-label text-primary font-weight-bold"><strong>Question 10.</strong>
+                        Time off from work is as important as compensation to you.</label>
+                    <select class="form-control form-control-lg" id="q10">
+                        <option selected="selected" disabled>Select an option</option>
+                        <option>1 (strongly disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (strongly agree)</option>
+                    </select>
+                    <div class="form-control-feedback"></div>
                 </div>
+
+                <div id='error'></div>
+
+                <!-- creating the Submit buttom -->
+                <div class="text-center pb-3">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle mr-2 aria-hidden="
+                            true""></i>Submit</button>
+                </div>         
+
             </form>
 
+            <!-- Card footer defined at the bottom of form.  Setting up links to employee data file and a form reset -->
             <div class="card-footer text-muted p-3">
                 <a href="/api/employees">API Employee List</a>
+                <a class="float-right text-dark" href="/survey">Reset Form </a>
             </div>
-
         </div>
 
+
+        <!-- modal setup -->
         <div class="modal fade" id="modal_response">
             <div class="modal-dialog" role="document">
+
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title">Hi, <span id="my_name"></span>!</h3>
+                        <h3 class="modal-title">Closest Employee Match</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Your new BFF is <strong><span id="friend_name"></span></strong>.</p>
-                        <p>Call now at <strong><span id="friend_number"></span></strong>!</p>
-                        <img class="img-thumbnail my-3" id="friend_photo" src=""></img>
+                        <p><strong><span id="closest_Employee"></span></strong>.</p>
+                        <img class="img-thumbnail my-3" id="closest_photo" src=""></img>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -230,7 +248,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- For Bootstrap 4 -->
@@ -242,3 +259,28 @@
 </body>
 
 </html>
+
+
+
+
+<!-- Modal -->
+<!-- <div id="results-modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog"> -->
+
+<!-- Modal content-->
+<!-- <div class="modal-content">
+                        <div class="modal-header">
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                        <button class="close float-right" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img" src="" alt="" width='100%'>
+                        </div>
+                        <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                
+                    </div>
+                </div> -->
