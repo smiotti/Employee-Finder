@@ -22,7 +22,7 @@ The user's most compatible employee uses the following logic as a guide:
 
 From here you can close the closest Match window and try another survey (there is also a Reset Form link on the survey footer), navigate to the updated Employee List or click the Home button to return to the Home Page.
 
- [Employee-Finder](Images/emplpyeeFinder.GIF)
+ [Employee-Finder](images/EmpFinder.GIF)
 
 
 
