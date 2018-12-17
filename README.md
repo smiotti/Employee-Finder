@@ -8,7 +8,7 @@ Welcome to *Employee Finder*, a compatibility-based "employee finder" applicatio
 
 
 ### How to use Employee Finder:
-To use Employee Finder. navigate your web browser to http://localhost:8080/.  This is the home page.  From here you can navigate to the Employee Lists or to the user Survey.  Click the "Go to Survey" button, complete the survey questions and click Submit.  Note: All fields are required to be filled out.  Based on your answers, a window will pop up with an existing employee that is the closest match to you. 
+To use Employee Finder. navigate your web browser to http://localhost:8080/.  This is the home page.  From here you can navigate to the Employee Lists or to the user Survey.  Click the "Go to Survey" button, complete the survey questions and click Submit.  Note: All user survey fields are required to be filled out.  Based on your answers, a window will pop up with an existing employee that is the closest match to you. 
 
 The user's most compatible employee uses the following logic as a guide:
 
@@ -22,6 +22,7 @@ The user's most compatible employee uses the following logic as a guide:
 
 From here you can close the closest Match window and try another survey (there is also a Reset Form link on the survey footer), navigate to the updated Employee List or click the Home button to return to the Home Page.
 
+ [Employee-Finder](Images/emplpyeeFinder.GIF)
 
 
 
@@ -40,7 +41,7 @@ From here you can close the closest Match window and try another survey (there i
         
         *If no song is provided then Liri will default to "What's My Age Again" by blink-182.*
 
-        [Example: node liri spotify-this-song ](screen_cap/liri_spotify-this-song_no_data.GIF)
+        [Employee-Finder](Images/emplpyeeFinder.GIF)
 
 
 ------
