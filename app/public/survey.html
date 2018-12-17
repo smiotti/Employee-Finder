@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Employee Finder</title>
-
-    <!-- prob dont need -->
-    <!-- <link rel="icon" type="image/png" href="assets/images/favicon.png"> -->
-
+    <title>Employee Survey</title>
 
     <!-- jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -35,7 +31,7 @@
         <!-- setting up a Bootstrap Card to house the survey form. -->
         <div class="card mb-5" id="survey">
             <h1 class="card-header text-primary p-4"><i class="fa fa-check-circle mr-2"></i><strong>Survey Questions</strong>
-                <!-- Hone button -->
+                <!-- Home button -->
                 <a href="/">
                     <button class="btn float-right btn-lg btn-success">
                         <span class="fa fa-home"></span>
@@ -215,7 +211,7 @@
                 <div class="text-center pb-3">
                     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle mr-2 aria-hidden="
                             true""></i>Submit</button>
-                </div>         
+                </div>
 
             </form>
 
@@ -230,16 +226,15 @@
         <!-- modal setup -->
         <div class="modal fade" id="modal_response">
             <div class="modal-dialog" role="document">
-
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="modal-title">Closest Employee Match</h3>
+                        <h3 class="modal-title text-primary font-weight-bold">Closest Employee Match</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                        <p><strong><span id="closest_Employee"></span></strong>.</p>
+                    <div class="modal-body font-weight-bold text-center">
+                        <h4 id="closest_Employee"></h4>
                         <img class="img-thumbnail my-3" id="closest_photo" src=""></img>
                     </div>
                     <div class="modal-footer">
@@ -248,39 +243,15 @@
                 </div>
             </div>
         </div>
+
     </div>
 
-    <!-- For Bootstrap 4 -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-         -->
-    <!-- Custom JavaScript -->
-    <!-- <script type="text/javascript" src="assets/javascript/app.js"></script> -->
+    <!-- For Bootstrap 4 JS jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
-
-
-
-
-<!-- Modal -->
-<!-- <div id="results-modal" class="modal fade" role="dialog">
-                    <div class="modal-dialog"> -->
-
-<!-- Modal content-->
-<!-- <div class="modal-content">
-                        <div class="modal-header">
-                        <h2 class="modal-title"><strong>Best Match</strong></h2>
-                        <button class="close float-right" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                        <h2 id="match-name"></h2>
-                        <img id="match-img" src="" alt="" width='100%'>
-                        </div>
-                        <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                
-                    </div>
-                </div> -->

@@ -40,9 +40,6 @@
       $('#modal_response').modal('toggle');
     }
   
-// Pick up here
-
-
     const submit = function(e) {
       e.preventDefault();
   
@@ -80,10 +77,6 @@
     }
   
     $('#submit').on('click', submit)
-
-    // clear the question fields after submitting
-    // $('.form-control-feedback').empty();
-  
   })
 
 

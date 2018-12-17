@@ -26,6 +26,10 @@ const employees = require('../data/employees.js');
 module.exports = function (app) {
   
 
+  app.get('/api/list', function(req, res) {
+    res.json(employees);
+  });
+
   // Display JSON for all employees.
   app.get('/api/employees', function(req, res) {
     res.json(employees);
@@ -95,9 +99,9 @@ module.exports = function (app) {
 
     // Looping through the User's scores and converting to integers before witing out to Employee file
     for (let i = 0; i < userData.scores.length; i++) {
-      req.body.scores[i] = parseInt(userData.scores[i]);
-      // console.log('*** updating user score to integer ****' + req.body.scores);
+      userScores[i] = parseInt(userData.scores[i]);
     }
+    // console.log(`*** updating user scores to integer ****  ${userScores}`);
 
 
     // Save the user's data to the employees data file. 

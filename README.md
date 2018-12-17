@@ -8,23 +8,21 @@ Welcome to *Employee Finder*, a compatibility-based "EmployeeFinder" application
 
 
 ### How to use Employee Finder:
-To use Employee Finder 
+To use Employee Finder. navigate your web browser to http://localhost:8080/.  This is the home page.  From here you can navigate to the Employee Lists or to the user Survey.  Click the "Go to Survey" button, complete the survey questions and click Submit.  Note: All fields are required to be filled out.  Based on your answers, a window will pop up with an existing employee that is the closest match to you. 
+
+The user's most compatible employee uses the following logic as a guide:
+
+   * Compare the difference between current user's scores and scores from other emplpyees, question by question. Add up the differences to calculate the absolute `Total Difference`.
+     * Example: 
+       * User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
+       * User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
+       * Total Difference: **2 + 1 + 2 =** **_5_**
+   * Put another way: there are no negative number totals! This app calculates the difference of both `5-3` and `3-5` as `2`, and so on. 
+   * The closest match will be the user with the least amount of difference.
+
+From here you can close the closest Match window and try another survey (there is also a Reset Form link on the survey footer), navigate to the updated Employee List or click the Home button to return to the Home Page.
 
 
-
-you will need Node installed on your computer.  Open a command line window and navigate to the root directory of the program.  Liri responds to four different commands. A description of each command and links to screenshots of the program in action are provided below!  Use the following syntax from your command line to run Liri (without the quotes) -->  *node liri "command" "searchInfo"*  
-*Note, quotes will be required if you want to use special characters or apostrophes in the "seachInfo".
-
-   * `concert-this` - This will search the Bands in Town Artist Events API for an artist/band and render the following information about each event to the command line:
-
-     * Name of the venue
-     * Venue location
-
-      [Example: node liri concert-this Fleetwood Mac](screen_cap/liri_concert-this.GIF)
-
-        *If no artist or band is provided, or there are no upcoming events, then Liri will alert the user.*
-
-        [Example: node liri concert-this U2](screen_cap/liri_concert-this_no_data.GIF)
 
 
    * `spotify-this-song` - This will search the Spotify API for a song (artist optional) and render the following information about the song to the command line:
@@ -45,43 +43,6 @@ you will need Node installed on your computer.  Open a command line window and n
         [Example: node liri spotify-this-song ](screen_cap/liri_spotify-this-song_no_data.GIF)
 
 
-   * `movie-this` - This will search the OMDB API for a movie and render the following information about the movie to the command line:
-
-       * Title of the movie
-       * Year the movie came out
-       * IMDB Rating of the movie
-       * Rotten Tomatoes Rating of the movie
-       * Country where the movie was produced
-       * Language of the movie
-       * Plot of the movie
-       * Actors in the movie
-
-        [Example: node liri movie-this Top Gun](screen_cap/liri_movie-this.GIF)
-
-        *If the user doesn't type a movie in, Liri will output data for the movie 'Mr. Nobody.*
-
-        [Example: node liri movie-this ](screen_cap/liri_movie-this_no_data.GIF)
-
-
-   * `do-what-it-says` - This will take the text inside of random.txt and then use it to call one of LIRI's commands above.
-
-        [Example (Spotify): node liri do-what-it-says](screen_cap/liri_do-what-it-says_ex1.GIF)
-
-        [Example (Concert): node liri do-what-it-says](screen_cap/liri_do-what-it-says_ex2.GIF)
-
-        [Example (Movie): node liri do-what-it-says](screen_cap/liri_do-what-it-says_ex3.GIF)
-
-        *If the random.txt file contains an invalid command, Liri will alert the user.*
-
-        [Invalid Data Example: node liri do-what-it-says](screen_cap/liri_do-what-it-says_invalid.GIF)
-
-
-### Challenge
-In addition to logging the data to the terminal/bash window, data is also being outputed to a .txt file called [log.txt](log.txt), located in the root folder.  Data is being appended to the text file.
-    
-
 ------
-  
-To contribute to the project, or get help -->   steve.miotti@dont_bother!!.com  :bowtie:
-
+Update Portfolio:
  [My Portfolio](https://smiotti.github.io/Bootstrap-Portfolio/)

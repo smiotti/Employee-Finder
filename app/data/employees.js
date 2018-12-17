@@ -20,6 +20,10 @@ const employees = [
     {   "name": "Natasha Romanova",
         "photo": "https://30c57e491d34574ac3c4-d69fd22d5bffeab44970d3ac75e05830.ssl.cf2.rackcdn.com/production/user/profile/296008/1521247791.jpg",
         "scores": [5, 3, 2, 4, 2, 2, 5, 4, 1, 4]
+    },
+    {   "name": "Homer Simpson",
+        "photo": "https://pbs.twimg.com/profile_images/725013638411489280/4wx8EcIA.jpg",
+        "scores": [1, 5, 1, 1, 1, 1, 1, 1, 5, 3]
     }
 ];
 
