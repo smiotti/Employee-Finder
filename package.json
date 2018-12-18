@@ -4,7 +4,7 @@
   "description": "Employee Finder - Node and Express Servers",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/smiotti/Employee-Finder#readme",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "devDependencies": {}
 }
