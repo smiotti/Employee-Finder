@@ -32,6 +32,7 @@ module.exports = function (app) {
   // Handles incoming survey results and adds to the employee data. 
   // This route also used to handle the compatibility logic.
   app.post('/api/employees', function (req, res) {
+    // sending req data to console during developement
     console.log(req.method + " request");
     console.log(req.body);
    
@@ -71,6 +72,7 @@ module.exports = function (app) {
         // Then update the total (or sum) of the differences.  Logging calculations to console
         absoluteDifference = Math.abs((currentUserScore) - (currentEmployeeScore));
         totalDifference += absoluteDifference; 
+        // sending score calculations to the console for development...
         console.log(`${userData.name} Score: ${currentUserScore}`);
         console.log(`${currentEmployee.name} Score: ${currentEmployeeScore}`);
         console.log(`Abs Difference = ${parseInt(currentUserScore)} - ${parseInt(currentEmployeeScore)} = ${absoluteDifference}`)
@@ -91,6 +93,7 @@ module.exports = function (app) {
     for (let i = 0; i < userData.scores.length; i++) {
       userScores[i] = parseInt(userData.scores[i]);
     }
+    // used for testing output...
     // console.log(`*** updating user scores to integer ****  ${userScores}`);
 
 
@@ -106,9 +109,10 @@ module.exports = function (app) {
 };
 
 
-
+// Seeing an error tyring to use this...
 // res.send('Survey form submitted successfuly!')
 
+// How is this used...
 // Respond with success of the delete operation (true or false)
       // res.json({ success: success })
     

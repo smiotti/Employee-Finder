@@ -1,4 +1,3 @@
-
 // This JS file handles the interaction with the HTML pages and employee data.
 
   $(function(){

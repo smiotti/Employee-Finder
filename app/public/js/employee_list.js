@@ -1,7 +1,7 @@
 // jQuery handler that runs the encapsulated code when the page is ready.
 $(function() {
-  // jQuery used to "download" the data from our server
-  // then dynamically display this content in our table. 
+  // jQuery used to "download" the data from our server/employee file
+  // then dynamically display this content 
 
   const render = function () {
     // Run Query
@@ -9,7 +9,7 @@ $(function() {
   }
 
   const renderList = function (outputElement, dataList) {
-    // Loop through and display each of the customers
+    // Loop through and display each of the employees
       for (let i = 0; i < dataList.length; i++) {
 
         // Get a reference to the employee list element and populate with employee data

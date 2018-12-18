@@ -15,6 +15,7 @@ module.exports = function(app) {
   // Setting up the route to serve up the Survey html file.
   app.get('/survey', function(req, res) {
     res.sendFile(path.join(__dirname, '/../public/survey.html'));
+    // Used for testing...
     // console.log(req.method);
     // console.log(req.body);
   });
