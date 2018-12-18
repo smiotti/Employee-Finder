@@ -21,7 +21,7 @@ The user's most compatible employee uses the following logic:
    * The closest match will be the user with the least amount of difference.
 
 
-From here you can close the Closest Match window and try another survey (there is also a Reset Form link on the survey footer), navigate to the updated Employee List, or click the Home button to return to the Home Page.
+From here you can close the Closest Match window and try another survey (there is also a Reset Form link on the survey footer), navigate to the updated Employee List, or click the Home button to return to the Home Page.  This is a fully responsive app ready for small screen and mobile use as well.
 
 
 ---------------------------------------------------------------
