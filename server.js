@@ -25,8 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // *** Routes ***
-require('./routes/api_routes.js')(app);
-require('./routes/html_routes.js')(app);
+require('./app/routes/api_routes.js')(app);
+require('./app/routes/html_routes.js')(app);
 
 
 // *** Listener ***
