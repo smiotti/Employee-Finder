@@ -1,7 +1,7 @@
 // jQuery handler that runs the encapsulated code when the page is ready.
 $(function() {
   // jQuery used to "download" the data from our server
-  // Yhen dynamically display this content in our table. 
+  // then dynamically display this content in our table. 
 
   const render = function () {
     // Run Query
