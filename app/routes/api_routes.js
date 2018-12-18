@@ -1,22 +1,12 @@
 
-// Your apiRoutes.js file should contain two routes:
-// A GET route with the url /api/employees. This will be used to display a
-// JSON of all possible employees.
+// apiRoutes.js file contains 3 routes:
 //
-// A POST routes /api/employees. This will be used to handle incoming survey 
+// A GET route with url /api/list.  This will be used to display an HTML page of all possible employees
+//
+// A GET route with the url /api/employees. This will be used to display a JSON of all possible employees.
+//
+// A POST route with url /api/employees. This will be used to handle incoming survey 
 // results. This route will also be used to handle the compatibility logic.
-
-
-// 6. Determine the user's most compatible employee using the following as a guide:
-
-//    * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
-//    * With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the `totalDifference`.
-//      * Example: 
-//        * User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
-//        * User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
-//        * Total Difference: **2 + 1 + 2 =** **_5_**
-//    * Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on. 
-//    * The closest match will be the user with the least amount of difference.
 
 
 // Importing employee data for use in routes 
@@ -25,7 +15,7 @@ const employees = require('../data/employees.js');
 // Exporting routes
 module.exports = function (app) {
   
-
+  // Handles routing for HTML employee list page of all eomployees
   app.get('/api/list', function(req, res) {
     res.json(employees);
   });
@@ -118,7 +108,6 @@ module.exports = function (app) {
 
 
 // res.send('Survey form submitted successfuly!')
-
 
 // Respond with success of the delete operation (true or false)
       // res.json({ success: success })
