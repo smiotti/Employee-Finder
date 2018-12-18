@@ -22,28 +22,12 @@ The user's most compatible employee uses the following logic as a guide:
 
 From here you can close the closest Match window and try another survey (there is also a Reset Form link on the survey footer), navigate to the updated Employee List or click the Home button to return to the Home Page.
 
- [Employee-Finder](images/EmpFinder.GIF)
+ 
+ [Employee-Finder Home Page](images/EmpFinder.GIF)
 
 
 
-   * `spotify-this-song` - This will search the Spotify API for a song (artist optional) and render the following information about the song to the command line:
+---------------------------------------------------------------
 
-     * Artist(s)
-     * The song's name
-     * A preview link of the song from Spotify
-     * The album that the song is from
-
-      [Example: node liri spotify-this-song Dont stand so close to me](screen_cap/liri_spotify-this-song.GIF)
-
-        *If you are getting unexpected results, you can strengthen your search by adding the artist name. To do this use a "," between song and artist.*
-        
-        [Example: node liri spotify-this-song Alone, Heart](screen_cap/liri_spotify-this-song_with_artis.GIF)
-        
-        *If no song is provided then Liri will default to "What's My Age Again" by blink-182.*
-
-        [Employee-Finder](Images/emplpyeeFinder.GIF)
-
-
-------
-Update Portfolio:
+Updated Portfolio:
  [My Portfolio](https://smiotti.github.io/Bootstrap-Portfolio/)
