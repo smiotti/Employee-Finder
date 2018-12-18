@@ -14,19 +14,19 @@ module.exports = function(app) {
   
   // Setting up the route to serve up the Survey html file.
   app.get('/survey', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/survey.html'));
+    res.sendFile(path.join(__dirname, '/../public/survey.html'));
     // console.log(req.method);
     // console.log(req.body);
   });
 
   // Setting up the route to serve up the employee_list html file.
   app.get('/list', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/employee_list.html'));
+    res.sendFile(path.join(__dirname, '/../public/employee_list.html'));
   });
 
 
   // If no matching route is found, goto homepage
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/home.html'));
+    res.sendFile(path.join(__dirname, '/../public/home.html'));
   });
 };
