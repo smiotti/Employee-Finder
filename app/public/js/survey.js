@@ -6,9 +6,6 @@
   
       // Validating both the "Name" and "Photo" inputs fields in the Survey form are not empty.
       // Sets isValid to false if any are empty
-
-      // !!!!!!!!!!create a for loop here as an alternate option
-
       $('input').each(function() {
         if (!$(this).val()) {
           isValid = false;
@@ -17,9 +14,6 @@
   
       // Using jQuery's each method, loop through the select elements
       // Sets isValid to false if any are unchosen
-
-      // !!!!!!!!!!create a for loop here as an alternate option
-
       $('.form-control').each(function(i, element) {
         if (!$(this).val()) {
           isValid = false;

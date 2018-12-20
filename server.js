@@ -6,7 +6,7 @@ const path = require('path');
 // enstantiate the Express application
 const app = express();
 
-// setting up the port number
+// setting up the port number for Heroku and local host
 var PORT = process.env.PORT || 8000;
 
 // Sets up the Express app to handle data parsing.

@@ -1,4 +1,4 @@
-// jQuery handler that runs the encapsulated code when the page is ready.
+// Using jQuery function to retrieve and render the Employee List page
 $(function() {
   // jQuery used to "download" the data from our server/employee file
   // then dynamically display this content 
